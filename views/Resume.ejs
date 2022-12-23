@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume Results</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/playfair-display" rel="stylesheet">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gradient-to-r from-gray-100 to-gray-300">
+        <!-- RESUME NUMBER 1 ------------------------------------------- -->
+        <h1 class="mx-10 text-lg text-gray-500"> Resume Number 1</h1>
+        <div class=" flex items-center justify-center mt-5" id="invoice">
+            <div class="bg-red-800 w-1/8 p-10 h-auto">
+                <div class="flex items-center justify-center mb-10">
+                    <span class="px-2 text-3xl" id="Firstname_Value"></span>
+                    <span id="Lastname_Value" class="text-3xl"></span>
+                </div>
+                <!------------------------------------------------------------------------------------------------- CONTACT SECTION------------------------------->
+                <h1 class="text-gray-400 uppercase tracking-widest text-lg font-bold">Contact</h1>
+                <hr class="w-1/6 mb-5">
+                <h1 class="text-gray-400 text-sm ">
+                    Email :
+                    <span id="Email_Value"></span>
+                </h1>
+                <h1 class="text-gray-400 text-sm">
+                    Age :
+                    <span id="Age_Value"></span>
+                </h1>
+                <h1 class="text-gray-400 text-sm">
+                    City :
+                    <span id="City_Value"></span>
+                </h1>
+                <h1 class="text-gray-400 text-sm">
+                    Country :
+                    <span id="Country_Value"></span>
+                </h1>
+                <h1 class="text-gray-400 text-sm">
+                    Code Postal :
+                    <span id="Codepostal_Value"></span>
+                </h1>
+                <h1 class="text-gray-400 text-sm">
+                    Address :
+                    <span id="Adress_Value"></span>
+                </h1>
+                <!------------------------------------------------------------------------------------------------- END CONTACT SECTION------------------------------->
+                <!------------------------------------------------------------------------------------------------- EDUCATION START SECTION------------------------------->
+                <hr class="my-5">
+                <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-lg font-bold">EDUCATION</h1>
+                <hr class="w-1/6 mb-5">
+                <h1 class="text-gray-400 text-sm uppercase font-semibold tracking-wider" id="Univ1_Diploma_Value"></h1>
+                <h1 class="text-gray-500 text-sm">
+                    <span class="italic text-gray-400" id="Univ1_Name_Value"></span>
+                    ,
+                    <span class="text-gray-400 font-semibold italic" id="Univ1_City_Value"></span>
+                    <span id="Univ1_Date_Value"></span>
+                </h1>
+                <br>
+                <h1 class="text-gray-400 text-sm uppercase font-semibold tracking-wider" id="Univ2_Diploma_Value"></h1>
+                <h1 class="text-gray-500 text-sm">
+                    <span class="italic text-gray-400" id="Univ2_Name_Value"></span>
+                    ,
+                    <span class="text-gray-400 font-semibold italic" id="Univ2_City_Value"></span>
+                    <span id="Univ2_Date_Value"></span>
+                </h1>
+                <!------------------------------------------------------------------------------------------------- END EDUCATION SECTION------------------------------->
+                <hr class="my-5">
+                <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-lg font-bold">SKILLS</h1>
+                <hr class="w-1/6 mb-5">
+                <ul>
+                    <li class="text-gray-500 text-sm list-disc ml-4" id="Skill1_Value"></li>
+                    <li class="text-gray-500 text-sm list-disc ml-4" id="Skill2_Value"></li>
+                    <li class="text-gray-500 text-sm list-disc ml-4" id="Skill3_Value"></li>
+                    <li class="text-gray-500 text-sm list-disc ml-4" id="Skill4_Value"></li>
+                    <li class="text-gray-500 text-sm list-disc ml-4" id="Skill4_Value"></li>
+                </ul>
+            </div>
+            <div class="bg-white w-7/12 p-10 h-auto bg-green-100">
+                <h1 class="text-gray-400 text-lg"> About me</h1>
+                <br>
+                <h1 class=" text-gray-500" id="AboutMe"></h1>
+                <br>
+                <h1 class="font-semibold uppercase tracking-wider my-6 text-gray-500">Experience</h1>
+                <h1 class="text-gray-600 font-semibold" id="Experience1_Job_Value1"></h1>
+                <span class="text-gray-500" id="Experience1_Date_Value1"></span>
+                <br>
+                <br>
+                <ul class="list-disc ml-5 text-gray-500">
+                    <li class="" id="Experience1_Project1_Value1"></li>
+                    <li class="" id="Experience1_Project2_Value1"></li>
+                </ul>
+                <br>
+                <h1 class="text-gray-600 font-semibold" id="Experience2_Job_Value2"></h1>
+                <span class="text-gray-500" id="Experience2_Date_Value2"></span>
+                <br>
+                <br>
+                <ul class="list-disc ml-5 text-gray-500">
+                    <li class="" id="Experience2_Project1_Value2"></li>
+                    <li class="" id="Experience2_Project2_Value2"></li>
+                </ul>
+                <br>
+                <h1 class="text-gray-600 font-semibold" id="Experience3_Job_Value3"></h1>
+                <span class="text-gray-500" id="Experience3_Date_Value3"></span>
+                <br>
+                <br>
+                <ul class="list-disc ml-5 text-gray-500">
+                    <li class="" id="Experience3_Project1_Value3"></li>
+                    <li class="" id="Experience3_Project2_Value3"></li>
+                </ul>
+            </div>
+        </div>
+        <!--                                                           DOWNLOAD RESUME NUMBER 1                                                          -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <button id="download-button" class="mx-20 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+            Download as PDF
+        </button>
+        <script src="INSERT.js"></script>
+        <script src="EXTRACT.js"></script>
+        <script src="PDF.js"></script>

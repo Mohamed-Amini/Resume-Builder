@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= (typeof(title) !== 'undefined') ? title : 'Node JS Login and Registration System - W3jar' %></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/playfair-display" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-gray-100 to-gray-300">
+  <!------ ------------------------------------------------------------------HERE GOES THE NAV REMEMBERRRR !!! ------->
+<nav class="sticky top-0  z-40 " style="background: hsla(0, 0%, 100%, 0.55) ; backdrop-filter: blur(30px);">
+    <div class="px-6 mx-auto ">
+        <div class="flex justify-between">
+            <!----The A tags we uses --->
+            <div class="flex items-center space-x-8 hidden md:flex">
+                <a href="" class="py-2 text-green-500 hover:text-red-500 text-lg font-bold">Features</a>
+                <a href="" class="py-2 text-green-500 hover:text-red-500 text-lg font-bold">Contact</a>
+            </div>
+            <!----The A tags we uses ----- END  --->
+            <div class="">
+                <a href="#" class="flex items-center py-2 px-2 text-red-500">
+                    <svg
+                        version="1.1"
+                        id="Icon_Set"
+                        class="h-16 w-16 mr-3 text-blue-700"
+                        xh-12
+                        w-12
+                        mr-3
+                        text-blue-700mlns="http://www.w3.org/2000/svg"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 64 64"
+                        style="enable-background:new 0 0 64 64"
+                        xml:space="preserve"
+                    >
+                        <style>.st0,.st2,.st3{fill:none;stroke:#37474f;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.st2,.st3{fill:#90caf9}.st3{fill:#fff}</style>
+                        <g id="Resume">
+                            <path class="st0" d="M11 2.5h0c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2h0c-1.1 0-2-.9-2-2v-3c0-.6.4-1 1-1h0c.6 0 1 .4 1 1v3M48 50.5V54c0 1.4-1.1 2.5-2.5 2.5H42M26.6 61H12.5c-1.4 0-2.5-1.1-2.5-2.5h0"/>
+                            <path class="st0" d="M52.5 46v12.5c0 1.4-1.1 2.5-2.5 2.5H37.5M50 9h0c1.4 0 2.5 1.1 2.5 2.5v20.6M28.1 56.5H8.5C7.1 56.5 6 55.4 6 54V7c0-1.4 1.1-2.5 2.5-2.5h37C46.9 4.5 48 5.6 48 7v26.5"/>
+                            <path class="st2" d="M42 23.5H32c-.6 0-1-.4-1-1v-12c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v12c0 .5-.4 1-1 1z"/>
+                            <circle
+                                class="st3"
+                                cx="37"
+                                cy="16.5"
+                                r="2.7"
+                            />
+                            <path class="st3" d="M41 23.5h-8v-.3c0-2.2 1.8-4 4-4h0c2.2 0 4 1.8 4 4v.3z"/>
+                            <path class="st0" d="M11 23.5h8M11 15.5h8M11 18.5h16M11 28.5h32"/>
+                            <path class="st2" d="M11 33.5h16M11 38.5h16M11 43.5h16M11 48.5h8"/>
+                            <g>
+                                <path class="st0" d="M35 .5h5M42 .5h1"/>
+                            </g>
+                            <g>
+                                <path class="st0" d="M56.5 19.5v5M56.5 26.5v1"/>
+                            </g>
+                            <g>
+                                <path d="m56.6 34.2.7.7c1 1 1 2.6 0 3.5L37.8 57.8l-4.2-4.2L53 34.2c1-1 2.6-1 3.6 0z" style="fill:#ffb300;stroke:#37474f;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+                                <path class="st0" d="m33.6 53.6 4.2 4.2-3.5 3.6-6.4 2.1 2.1-6.4z"/>
+                                <path class="st0" d="m29.3 59.3-1.4 4.2 4.3-1.4zM49.8 34.5l-7 7.1"/>
+                                <path style="fill:#37474f;stroke:#37474f;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" d="M57.3 38.4 53 34.2"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <i>
+                        <span class="font-bold text-2xl text-red-700" style="font-family: 'Playfair Display', sans-serif;">Resume Creator</span>
+                    </i>
+                </a>
+            </div>
+            <div class="flex items-center space-x-1 hidden md:flex">
+                <!-- <a href="/login" class="py-5 px-3 hover:text-red-500 text-md font-bold">Log in</a> -->
+                <a href="/logout" class="py-2 px-3 bg-red-500 text-white rounded shadow hover:bg-green-500 transition duration-700 text-md font-bold">Log out</a>
+            </div>
+            <!--------- Responsive button---->
+            <div class="md:hidden  flex items-center">
+                <button class="Mobile-menu-button">
+                    <svg
+                        class="w-6 h-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="Mobile-menu hidden md:hidden">
+        <a href="" class="block py-2 px-2 hover:bg-gray-100 flex justify-center">Features</a>
+        <a href="" class="block py-2 px-2 flex justify-center">Contact</a>
+    </div>
+</nav>
+
+<!----------------------------------------------------------- End Navbar ------------------------------------------------------------->
+<section class=" py-1 bg-blueGray-500">
+    <div class="w-full lg:w-8/12 px-4 mx-auto mt-6">
+      <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white border-0">
+        <div class="rounded-t bg-white mb-0 px-6 py-6">
+          <div class="text-center flex justify-between">
+            <h6 class="text-blueGray-700 text-xl font-bold">
+              Resume Infos
+            </h6>
+          </div>
+        </div>
+        <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
+          <form action="/ResumeResult">
+            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+              Personal Information
+            </h6>
+            <div class="flex flex-wrap">
+              <div class="w-full lg:w-6/12 px-4">
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                    Age
+                  </label>
+                  <input type="number" id="Form_Age" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" >
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 px-4">
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                    Email address
+                  </label>
+                  <input type="email" id="Form_Email" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 px-4">
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                    First Name
+                  </label>
+                  <input type="text" id="Form_Firstname" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 px-4">
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                    Last Name
+                  </label>
+                  <input type="text" id="Form_Lastname" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                </div>
+              </div>
+            </div>
+    
+            <hr class="mt-6 border-b-1 border-blueGray-300">
+    
+            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+              Contact Information
+            </h6>
+            <div class="flex flex-wrap">
+              <div class="w-full lg:w-12/12 px-4">
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                    Address
+                  </label>
+                  <input type="text" id="Form_Adress" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                </div>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                    City
+                  </label>
+                  <input type="text" id="Form_City" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                </div>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                    Country
+                  </label>
+                  <input type="text" id="Form_Country" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                </div>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                    Postal Code
+                  </label>
+                  <input type="text" id="Form_Codepostal" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                </div>
+              </div>
+            </div>
+            <!-------------------------------------------------------------------- EDUCATION SECTION----------------------------------------------------------->
+            <hr class="mt-6 border-b-1 border-blueGray-300">
+            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+                Education
+              </h6>
+              <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      First Education
+                    </label>
+                    <br>
+                    <input type="date" id="Form_Ed_Date1" required placeholder="Date of receiving diploma"  max="2022-12-24" min="1980-1-1" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full ">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Ed_University1" required placeholder="The name of the university" class="border-0 px-3 py-3 mt-9 avatar text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" >
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Ed_Diploma1" required placeholder="Diploma You got" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Ed_City1" required placeholder="City of university" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold ">
+                      Second Education
+                    </label>
+                    <br>
+                    <input type="date" id="Form_Ed_Date2" required placeholder="Date of receiving diploma"  max="2022-12-24" min="1980-1-1"  class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Ed_University2" required placeholder="The name of the university" class="border-0 px-3 py-3 mt-8 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" >
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Ed_Diploma2" required placeholder="Diploma You got" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Ed_City2" required placeholder="City of university" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+              </div>
+
+              <hr class="mt-6 border-b-1 border-blueGray-300">
+              <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+                Skills
+              </h6>
+              <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Skill1" required placeholder="Enter one of Your main Skills" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Skill2" required placeholder="Enter one of Your main Skills" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" >
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Skill3" required placeholder="Enter one of Your main Skills" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Skill4" required placeholder="Enter one of Your main Skills" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+              </div>  
+      
+              <hr class="mt-6 border-b-1 border-blueGray-300">
+
+<!--------------------------------------------------------------------------------------------------------EXPERIENCES START  ------------------------------>
+            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+                Experience
+              </h6>
+              <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      Your Experience
+                    </label>
+                    <input type="date" id="Form_Exp1_Date" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Exp1_Job" required class="mt-4 border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" >
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Exp1_Project1" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Exp1_Project2" required class=" border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      Your second Experience
+                    </label>
+                    <input type="date" id="Form_Exp2_Date" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Exp2_Job" required class="mt-4 border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" >
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Exp2_Project1"  requiredc lass="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Exp2_Project2" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      Your third Experience
+                    </label>
+                    <input type="date" id="Form_Exp3_Date" required  class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Exp3_Job" required class="mt-4 border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" >
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Exp3_Project1" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2">
+                      
+                    </label>
+                    <input type="text" id="Form_Exp3_Project2" required class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                  </div>
+                </div>
+              </div>
+      
+              <hr class="mt-6 border-b-1 border-blueGray-300">
+              
+    
+            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+              About Me
+            </h6>
+            <div class="flex flex-wrap">
+              <div class="w-full lg:w-12/12 px-4">
+                <div class="relative w-full mb-3">
+                  <textarea type="text" id="Form_Aboutme" required placeholder="Write About your self " class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows="4"> </textarea>
+                </div>
+              </div>
+            </div>
+            <button type="submit" id="Form_Submitbtn" value="submit" onclick="InsertInfo()" class="text-white bg-green-700 hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Click Me to see your Final results</button>
+          </form>
+        </div>
+      </div>
+      <footer class="relative  pt-8 pb-6 mt-2">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+          <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+    </section>
+<script src="INSERT.js"></script>
+<script src="EXTRACT.js"></script>
+

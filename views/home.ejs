@@ -1,0 +1,187 @@
+<%- include('header'); -%>
+<nav class="sticky top-0  z-40 " style="background: hsla(0, 0%, 100%, 0.55) ; backdrop-filter: blur(30px);">
+    <!------ HERE GOES THE NAV REMEMBERRRR !!! ------->
+    <div class="px-6 mx-auto ">
+        <div class="flex justify-between">
+            <!----The A tags we uses --->
+            <div class="flex items-center space-x-8 hidden md:flex">
+                <a href="" class="py-2 text-green-500 hover:text-red-500 text-lg font-bold">Features</a>
+                <a href="" class="py-2 text-green-500 hover:text-red-500 text-lg font-bold">Contact</a>
+            </div>
+            <!----The A tags we uses ----- END  --->
+            <div class="">
+                <a href="#" class="flex items-center py-2 px-2 text-red-500">
+                    <svg
+                        version="1.1"
+                        id="Icon_Set"
+                        class="h-16 w-16 mr-3 text-blue-700"
+                        xh-12
+                        w-12
+                        mr-3
+                        text-blue-700mlns="http://www.w3.org/2000/svg"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 64 64"
+                        style="enable-background:new 0 0 64 64"
+                        xml:space="preserve"
+                    >
+                        <style>.st0,.st2,.st3{fill:none;stroke:#37474f;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.st2,.st3{fill:#90caf9}.st3{fill:#fff}</style>
+                        <g id="Resume">
+                            <path class="st0" d="M11 2.5h0c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2h0c-1.1 0-2-.9-2-2v-3c0-.6.4-1 1-1h0c.6 0 1 .4 1 1v3M48 50.5V54c0 1.4-1.1 2.5-2.5 2.5H42M26.6 61H12.5c-1.4 0-2.5-1.1-2.5-2.5h0"/>
+                            <path class="st0" d="M52.5 46v12.5c0 1.4-1.1 2.5-2.5 2.5H37.5M50 9h0c1.4 0 2.5 1.1 2.5 2.5v20.6M28.1 56.5H8.5C7.1 56.5 6 55.4 6 54V7c0-1.4 1.1-2.5 2.5-2.5h37C46.9 4.5 48 5.6 48 7v26.5"/>
+                            <path class="st2" d="M42 23.5H32c-.6 0-1-.4-1-1v-12c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v12c0 .5-.4 1-1 1z"/>
+                            <circle
+                                class="st3"
+                                cx="37"
+                                cy="16.5"
+                                r="2.7"
+                            />
+                            <path class="st3" d="M41 23.5h-8v-.3c0-2.2 1.8-4 4-4h0c2.2 0 4 1.8 4 4v.3z"/>
+                            <path class="st0" d="M11 23.5h8M11 15.5h8M11 18.5h16M11 28.5h32"/>
+                            <path class="st2" d="M11 33.5h16M11 38.5h16M11 43.5h16M11 48.5h8"/>
+                            <g>
+                                <path class="st0" d="M35 .5h5M42 .5h1"/>
+                            </g>
+                            <g>
+                                <path class="st0" d="M56.5 19.5v5M56.5 26.5v1"/>
+                            </g>
+                            <g>
+                                <path d="m56.6 34.2.7.7c1 1 1 2.6 0 3.5L37.8 57.8l-4.2-4.2L53 34.2c1-1 2.6-1 3.6 0z" style="fill:#ffb300;stroke:#37474f;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+                                <path class="st0" d="m33.6 53.6 4.2 4.2-3.5 3.6-6.4 2.1 2.1-6.4z"/>
+                                <path class="st0" d="m29.3 59.3-1.4 4.2 4.3-1.4zM49.8 34.5l-7 7.1"/>
+                                <path style="fill:#37474f;stroke:#37474f;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" d="M57.3 38.4 53 34.2"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <i>
+                        <span class="font-bold text-2xl text-red-700" style="font-family: 'Playfair Display', sans-serif;">Resume Creator</span>
+                    </i>
+                </a>
+            </div>                   
+            <div class="flex items-center space-x-1 hidden md:flex">
+                <!-- <a href="/login" class="py-5 px-3 hover:text-red-500 text-md font-bold">Log in</a> -->
+                <a href="/logout" class="py-2 px-3 bg-red-500 text-white rounded shadow hover:bg-green-500 transition duration-700 text-md font-bold">Log out</a>
+            </div>
+            <!--------- Responsive button---->
+            <div class="md:hidden  flex items-center">
+                <button class="Mobile-menu-button">
+                    <svg
+                        class="w-6 h-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="Mobile-menu hidden md:hidden">
+        <a href="" class="block py-2 px-2 hover:bg-gray-100 flex justify-center">Features</a>
+        <a href="" class="block py-2 px-2 flex justify-center">Contact</a>
+    </div>
+</nav>
+
+<main>
+    <div>
+        <!-- Section: Design Block -->
+        <section class="mb-40">
+            <div class="relative overflow-hidden bg-no-repeat bg-cover bg-fixed" style="background-position: 50%; background-image: url(https://cdn.shopify.com/s/files/1/0129/1072/files/annie-spratt-439326-unsplash.jpg?7096885515354947126); height: 500px;"></div>
+            <div class="container mx-auto px-6 md:px-12 xl:px-32">
+                <div class="text-center text-gray-800 my-14">
+                    <div class="block rounded-lg shadow-lg px-6 py-12 md:py-16 md:px-12" style="margin-top: -170px; background: hsla(0, 0%, 100%, 0.7); backdrop-filter: blur(30px);">
+                        <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
+                            The best offer on the market
+                            <br>
+                            <span class="text-red-700">For you Resume</span>
+                        </h1>
+                        <a
+                            class="inline-block px-9 py-4 mb-2 text-l text-white md:mb-0 mr-0 md:mr-2 bg-red-700 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                            data-mdb-ripple="true"
+                            data-mdb-ripple-color="light"
+                            href="/ResumeCreation"
+                            role="button"
+                        >Get started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Design Block -->
+    </div>
+    <!-- --------------------------- Feature sEction ----------------------- -->
+    <!-- <section class="">
+        <div class="container flex flex-col-reverse mx-auto lg:flex-row">
+            <div class="flex flex-col px-6 py-8 space-y-24 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5  ">
+                <div class="flex space-x-2 sm:space-x-4 animate__animated animate__fadeInDown animate__delay-0.5s">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="flex-shrink-0 w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                        ></path>
+                    </svg>
+                    <div class="space-y-2 ">
+                        <p class="text-xl font-medium leading-snug">Accesiblity</p>
+                        <p class="leading-snug">Praesentium ea et neque distinctio quas eius repudiandae quaerat obcaecati voluptatem similique!</p>
+                    </div>
+                </div>
+                <div class="flex space-x-2 px-3 sm:space-x-4 animate__animated animate__fadeInDown animate__delay-1s">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="flex-shrink-0 w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                        ></path>
+                    </svg>
+                    <div class="space-y-2">
+                        <p class="text-xl font-medium leading-snug">Easy To use</p>
+                        <p class="leading-snug">Praesentium ea et neque distinctio quas eius repudiandae quaerat obcaecati voluptatem similique!</p>
+                    </div>
+                </div>
+                <div class="flex space-x-2 px-7 sm:space-x-4 animate__animated animate__fadeInDown animate__delay-2s">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="flex-shrink-0 w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                        ></path>
+                    </svg>
+                    <div class="space-y-2">
+                        <p class="text-xl font-medium leading-snug">Multiple Templates</p>
+                        <p class="leading-snug">Praesentium ea et neque distinctio quas eius repudiandae quaerat obcaecati voluptatem similique!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 xl:w-3/5 ">
+                <div class="flex items-center justify-center p-4 md:p-8 lg:p-12">
+                    <img src="" alt="" class="rounded-9lg  aspect-video sm:min-h-96">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="">Example</div> -->
+</main>
+<%- include('footer'); -%>
